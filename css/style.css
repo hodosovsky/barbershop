@@ -1,0 +1,147 @@
+:root {
+  --fisrt-title-color: #ffffff;
+  --second-title-color: #303030;
+  --fisrt-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.pre-title {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/*--------- header */
+
+.header {
+  background-color: rgb(141, 139, 138);
+}
+
+.header-link,
+.header-phone {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  color: --fisrt-btn-color;
+}
+
+/*--------- hero */
+
+.hero {
+  background-color: gray;
+}
+
+.hero-link {
+  color: #303030;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  color: var(--fisrt-title-color);
+  font-family: Raleway, sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.hero-after-title {
+  color: #9da4bd;
+}
+
+/*--------- about */
+
+.about-pre-title {
+  color: var(--second-title-color);
+}
+
+.about-title {
+  color: var(--second-title-color);
+}
+
+.about-after-title {
+  color: #555;
+}
+
+.about-text {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02;
+}
+
+.about-btn {
+  color: --second-btn-color;
+}
+
+/*--------- prices */
+
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--fisrt-title-color);
+}
+
+.prices-item-text {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.prices-btn {
+  color: --second-btn-color;
+}
