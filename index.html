@@ -48,33 +48,37 @@
           <a href="tel:+380441111111" class="header-phone link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn">Online-booking</button>
+          <button type="button" class="header-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                href="#"
-                class="hero-link link"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href="#"
-                class="hero-link link"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  href="#"
+                  class="hero-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href="#"
+                  class="hero-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-content">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -119,7 +123,9 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">Online-booking</button>
+            <button type="button" class="about-btn btn" data-modal-open>
+              Online-booking
+            </button>
           </div>
         </div>
       </section>
@@ -167,7 +173,9 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn">Online-booking</button>
+          <button type="button" class="prices-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </section>
       <section class="benefits section">
@@ -210,12 +218,19 @@
           <h2 class="barbers-title title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
-                src="./img/barbers-img-1.jpg"
-                alt="haircuts"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrapper">
+                <img
+                  src="./img/barbers-img-1.jpg"
+                  alt="haircuts"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam nobis totam, adipisci in consequatur aliquid
+                  doloremque maiores velit, ipsa dolore deserunt. .
+                </p>
+              </div>
               <h3 class="barbers-item-title">John Smith</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -268,12 +283,19 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./img/barbers-img-2.jpg"
-                alt="haircuts"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrapper">
+                <img
+                  src="./img/barbers-img-2.jpg"
+                  alt="haircuts"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam nobis totam, adipisci in consequatur aliquid
+                  doloremque maiores velit, ipsa dolore deserunt. .
+                </p>
+              </div>
               <h3 class="barbers-item-title">Michele Doe</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -326,12 +348,19 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./img/barbers-img-3.jpg"
-                alt="haircuts"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrapper">
+                <img
+                  src="./img/barbers-img-3.jpg"
+                  alt="haircuts"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam nobis totam, adipisci in consequatur aliquid
+                  doloremque maiores velit, ipsa dolore deserunt. .
+                </p>
+              </div>
               <h3 class="barbers-item-title">Alan Black</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -466,5 +495,11 @@
         </li>
       </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
