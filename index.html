@@ -457,47 +457,187 @@
           </ul>
         </div>
       </section>
-      <section id="contacts">
-        <h2>Online-booking</h2>
-      </section>
-      <section>
-        <h2>Contacts</h2>
-        <address>
-          <a href="">st. Vasilkovaya, 7A Kiev, 08132</a>
-          <ul>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-            </li>
-          </ul>
-        </address>
-        <p>Working hours</p>
-        <p>Every day from 9:00 to 22:00</p>
-      </section>
+      <div>
+        <div class="container contacts-wrap">
+          <section id="contacts" class="booking">
+            <h2 class="booking-title">Online-booking</h2>
+            <form>
+              <span class="booking-form-wrap">
+                <label class="booking-input">
+                  <input class="booking-input type="text" placeholder="name*"
+                  /></label
+                >
+                <label class="booking-input">
+                  <input class="booking-input type="tel" placeholder="Phone*" />
+                </label>
+              </span>
+              <label class="comment-title">
+                Message<textarea
+                  name="booking-comment"
+                  class="booking-comment"
+                ></textarea>
+              </label>
+              <button type="submit" class="btn send-button">send</button>
+            </form>
+          </section>
+          <section>
+            <h2 class="contacts-title">Contacts</h2>
+            <address>
+              <ul class="contact-list list">
+                <li class="contacts-item">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./img/icons.svg#location"></use>
+                  </svg>
+                  <a href="" class="contact-address link"
+                    >st. Vasilkovaya, 7A Kiev, 08132</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./img/icons.svg#tel"></use>
+                  </svg>
+                  <a href="tel:+380441111111" class="contact-link link"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./img/icons.svg#email"></use>
+                  </svg>
+                  <a href="mailto:barbershop@email.com" class="contact-link"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="working-hours-title pre-title">Working hours</p>
+            <p class="working-hours">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+      </div>
     </main>
     <footer>
-      <p>
-        &copy; Copyright
-        <script type="text/javascript">
-          document.write(new Date().getFullYear());
-        </script>
-      </p>
-      <ul>
-        <li>
-          <a href="#" target="_blank" rel="noopener noreferrer nofollow"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a href="#" target="_blank" rel="noopener noreferrer nofollow"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+      <div class="footer container">
+        <p class="copyright">
+          &copy; Copyright
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+        <ul class="footer-list list pre-title">
+          <li>
+            <a
+              href="#"
+              class="footer-link link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="footer-link link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
+        <p class="modal-title">Заголовок модально вікна</p>
+        <form class="modal-form">
+          <label class="input-label"
+            >Ваше ім'я
+            <span class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                placeholder="Ваше ім'я"
+                required
+                minlength="2"
+                maxlength="20" />
+              <p class="name-error">Введені некоректні дані</p>
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img//icons.svg#name"></use></svg></span
+          ></label>
+
+          <label class="input-label"
+            >Номер телефону
+            <span class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-tel"
+                placeholder="Ваш номер"
+                required
+                minlength="10"
+                maxlength="13"
+              />
+              <p class="phone-error">Введені некоректні дані</p>
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img//icons.svg#tel"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="input-label"
+            >Email
+            <span class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                placeholder="Ваша пошта"
+                required
+              />
+              <p class="phone-error">Введені некоректні дані</p>
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img//icons.svg#email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="text-label"
+            >Ваш текст
+            <textarea
+              name="user-text"
+              class="online-comment"
+              placeholder="Коментар"
+            ></textarea>
+          </label>
+          <fieldset class="select">
+            <legend>size</legend>
+            <label
+              >Large
+              <input type="radio" name="size" value="large" />
+            </label>
+            <label
+              >Small
+              <input type="radio" name="size" value="small" />
+            </label>
+          </fieldset>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="modal-check visually-hidden"
+            />
+            <label class="check-text" for="privacy"
+              ><span
+                ><svg class="check-icon" width="16" height="15">
+                  <use href="./img/icons.svg#check"></use>
+                </svg>
+              </span>
+              Політика користування</label
+            >
+          </div>
+          <button type="submit" class="submit-button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

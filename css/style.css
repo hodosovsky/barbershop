@@ -5,6 +5,7 @@
   --second-btn-color: #303030;
   --accent-color: #ff6c00;
   --typical-mb: 20px;
+  --hover: color 250ms linear;
 }
 
 body {
@@ -124,6 +125,7 @@ body {
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  transition: var(--hover);
 }
 
 .header-link:hover,
@@ -181,6 +183,7 @@ body {
   font-weight: 600;
   line-height: 1.36;
   letter-spacing: 0.2em;
+  transition: var(--hover);
 }
 
 .hero-content {
@@ -346,7 +349,6 @@ body {
 
 .benefits-item {
   text-align: center;
-  border: 1px solid brown;
   width: 170px;
   height: 133px;
   padding: 20px 24px;
@@ -360,7 +362,18 @@ body {
   margin-top: 30px;
 }
 
+.benefits-item span::after {
+  content: '+';
+  position: absolute;
+  color: #ff6c00;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .benefits-item span {
+  position: relative;
   color: var(--second-title-color);
   font-size: 42px;
   font-weight: 700;
@@ -425,6 +438,7 @@ body {
 
 .barbers-item {
   width: calc((100% - 60px) / 3);
+  transition: var(--hover);
 }
 
 .barbers-item:hover .barbers-top-text {
@@ -473,6 +487,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--hover);
 }
 
 .barbers-soc-link:hover,
@@ -500,6 +515,193 @@ body {
   gap: 30px;
 }
 
+/* --------------- booking */
+
+.contacts-wrap {
+  display: flex;
+  gap: 100px;
+  background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 183px;
+}
+
+.contacts {
+  padding-right: 30px;
+}
+
+.booking {
+  width: calc(100% / 2);
+}
+
+.booking-title {
+  color: var(--fisrt-title-color);
+  font-family: Raleway;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin-bottom: 40px;
+}
+
+.booking-form-wrap {
+  display: block;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 44px;
+}
+
+.booking-input {
+  background-color: #191c26;
+  width: 100%;
+  border: none;
+  color: var(--fisrt-title-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.booking-input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--fisrt-title-color);
+}
+
+.booking-input:focus::placeholder {
+  color: var(--fisrt-title-color);
+}
+
+.booking-input::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.comment-title {
+  color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  padding-bottom: 44px;
+  display: block;
+}
+
+.booking-comment {
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid var(--fisrt-title-color);
+  resize: none;
+  background-color: #191c26;
+  border: none;
+  color: var(--fisrt-title-color);
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.booking-comment:focus {
+  border-bottom: 1px solid var(--fisrt-title-color);
+}
+
+.send-button {
+  cursor: pointer;
+  color: var(--fisrt-btn-color);
+}
+
+/* --------------- Contacts */
+
+.contacts-title {
+  color: var(--fisrt-title-color);
+  font-family: Raleway;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin-bottom: 40px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contacts-item + .contacts-item {
+  margin-top: var(--typical-mb);
+}
+
+.contacts-icon {
+  fill: #9da4bd;
+}
+
+.contact-address {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.66; /* 166.667% */
+  letter-spacing: 0.36px;
+}
+
+.contact-link {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+.working-hours-title {
+  color: var(--fisrt-title-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: var(--typical-mb);
+}
+
+.working-hours {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+  letter-spacing: 0.36px;
+}
+
+/* --------------- Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+}
+
+.footer-link,
+.copyright {
+  color: var(--second-title-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  text-transform: none;
+  transition: var(--hover);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
 /* --------------- modal window */
 
 .backdrop.is-hidden .modal {
@@ -513,6 +715,7 @@ body {
   height: 100%;
   background-color: #00000079;
   transition: opacity 300ms linear, visibility 300ms linear;
+  z-index: 2;
 }
 
 .modal {
@@ -525,10 +728,161 @@ body {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
+  padding: 40px;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.modal-title {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-label {
+  width: 100%;
+}
+
+.modal-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding-left: 28px;
+  font-size: 14px;
+  color: #9da4bd;
+}
+
+.modal-input:focus,
+.online-comment:focus {
+  outline-color: var(--accent-color);
+}
+
+.modal-input:focus ~ .input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input::placeholder {
+  color: #d51212;
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(115, 179, 115, 0.5);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(213, 89, 61, 0.5);
+}
+
+.mail-error,
+.phone-error,
+.name-error {
+  display: none;
+  color: red;
+  position: absolute;
+  bottom: -16px;
+  width: 350px;
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .mail-error,
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .phone-error,
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .name-error {
+  display: block;
+}
+
+.online-comment {
+  margin-top: 2px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.select {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.modal-field {
+}
+
+.check-text {
+  font-size: 14px;
+  color: #999999;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* .check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: var(--accent-color);
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+} */
+
+.submit-button {
+  cursor: pointer;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: transparent;
+}
+
+.check-icon {
+  fill: currentColor;
+}
+
+.modal-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
 }
