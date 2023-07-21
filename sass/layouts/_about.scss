@@ -1,0 +1,42 @@
+.about {
+  &-container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &-content {
+    max-width: 470px;
+  }
+
+  &-pre-title {
+    color: var(--second-title-color);
+    margin-bottom: var(--typical-mb);
+  }
+
+  &-title {
+    color: var(--second-title-color);
+    margin-bottom: var(--typical-mb);
+  }
+
+  &-after-title {
+    color: #555;
+    margin-bottom: var(--typical-mb);
+  }
+
+  &-text {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02;
+    margin-bottom: 42px;
+  }
+
+  &-btn {
+    color: --second-btn-color;
+  }
+}

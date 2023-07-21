@@ -1,0 +1,86 @@
+.booking {
+  &-title {
+    color: var(--fisrt-title-color);
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    margin-bottom: 40px;
+  }
+
+  &-form-wrap {
+    display: block;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 44px;
+  }
+
+  &-input {
+    background-color: #191c26;
+    width: 100%;
+    border: none;
+    color: var(--fisrt-title-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid var(--fisrt-title-color);
+    }
+
+    &:focus::placeholder {
+      color: var(--fisrt-title-color);
+    }
+
+    &::placeholder {
+      color: rgba(157, 164, 189, 0.4);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-comment {
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid var(--fisrt-title-color);
+    resize: none;
+    background-color: #191c26;
+    border: none;
+    color: var(--fisrt-title-color);
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+
+    &-title {
+      color: rgba(157, 164, 189, 0.4);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      padding-bottom: 44px;
+      display: block;
+
+      &:focus {
+        border-bottom: 1px solid var(--fisrt-title-color);
+      }
+    }
+  }
+
+  &-send-button {
+    cursor: pointer;
+    color: var(--fisrt-btn-color);
+  }
+}

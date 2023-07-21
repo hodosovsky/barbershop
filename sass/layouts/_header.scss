@@ -1,0 +1,49 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  &-container {
+    @extend %align-list;
+  }
+
+  &-logo {
+    margin-right: 130px;
+  }
+
+  &-logo-icon {
+    fill: var(--second-title-color);
+  }
+
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &-link,
+  &-phone {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    transition: var(--hover);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &-connect {
+    margin-left: auto;
+  }
+
+  &-btn {
+    color: var(--fisrt-btn-color);
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+}

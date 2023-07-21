@@ -1,0 +1,15 @@
+.gallery {
+  &-pre-title {
+    color: var(--second-title-color);
+    margin-bottom: 44px;
+  }
+
+  &-item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+}
