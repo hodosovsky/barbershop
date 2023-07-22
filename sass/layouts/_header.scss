@@ -6,7 +6,8 @@
   z-index: 1;
 
   &-container {
-    @extend %align-list;
+    display: flex;
+    align-items: center;
   }
 
   &-logo {

@@ -27,11 +27,16 @@
   }
 
   &-item {
-    width: calc((100% - 60px) / 3);
+    width: 100%;
+
     transition: var(--hover);
 
     &:hover .barbers-top-text {
       transform: translateY(0);
+    }
+
+    @include desktop {
+      width: calc((100% - 60px) / 3);
     }
   }
 

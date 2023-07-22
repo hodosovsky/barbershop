@@ -1,22 +1,50 @@
 .benefits {
   &-container {
     display: flex;
+
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   &-list {
-    width: calc((100% - 30px) / 2);
+    order: 2;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-right: 30px;
+    justify-content: center;
+
+    @include tablet {
+      padding-left: 219px;
+    }
+
+    @include desktop {
+      order: 1;
+      margin-right: 30px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
   }
 
   &-item {
+    width: calc((100% - 30px) / 2);
     text-align: center;
     width: 170px;
-    height: 133px;
-    padding: 20px 24px;
+    height: 193px;
+    padding: 20px 35px;
+
+    @include tablet {
+      width: 210px;
+      height: 133px;
+      padding: 20px 44px;
+    }
+
+    @include desktop {
+      width: 170px;
+      height: 133px;
+      padding: 20px 24px;
+    }
 
     &:nth-child(2n + 1) {
       margin-right: 30px;
@@ -55,6 +83,7 @@
   }
 
   &-content {
+    order: 1;
     max-width: 500px;
   }
 

@@ -9,8 +9,13 @@
   background-size: cover;
 
   .prices-wrap {
-    display: flex;
-    gap: 30px;
+    padding: 40px 30px;
+
+    @include desktop {
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &-pre-title {
@@ -21,11 +26,27 @@
   &-title {
     color: var(--fisrt-title-color);
     margin-bottom: 44px;
+    font-size: 40px;
+
+    @include tablet {
+      margin-bottom: 44px;
+      font-size: 42px;
+    }
   }
 
   &-list {
-    width: calc((100% - 30px) / 2);
-    padding: 30px 20px;
+    & + & {
+      margin-top: 20px;
+
+      @include desktop {
+        margin-top: 0;
+      }
+    }
+
+    @include desktop {
+      padding: 30px 20px;
+      width: calc((100% - 30px) / 2);
+    }
   }
 
   &-item {
@@ -36,11 +57,15 @@
 
     &::after {
       content: '';
-      width: 100px;
+      width: 73px;
       height: 1px;
       background-color: rgba(157, 164, 189, 0.12);
 
       flex-grow: 1;
+
+      @include tablet {
+        width: 100px;
+      }
     }
 
     & + & {
@@ -49,9 +74,15 @@
 
     &-text {
       color: #9da4bd;
-      font-size: 18px;
-      line-height: 1.67;
-      letter-spacing: 0.02em;
+      font-size: 14px;
+      line-height: 1.42;
+      letter-spacing: 0.01em;
+
+      @include tablet {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        line-height: 1.66;
+      }
 
       &:last-child {
         order: 1;

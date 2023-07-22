@@ -1,7 +1,29 @@
 .footer {
+  padding: 44px 0;
   display: flex;
-  justify-content: space-between;
-  padding: 56px 0;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 56px 0;
+  }
+
+  &-copyright {
+    margin-top: 20px;
+
+    @include tablet {
+      margin-top: 0;
+      order: 1;
+    }
+  }
+
+  &-list {
+    align-self: end;
+    @include tablet {
+      order: 2;
+    }
+  }
 
   &-link,
   &-copyright {

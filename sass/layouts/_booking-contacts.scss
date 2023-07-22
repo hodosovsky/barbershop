@@ -1,14 +1,19 @@
 .booking-contacts-wrap {
   background-color: #191c26;
-  padding-top: 130px;
-  padding-bottom: 183px;
+  // padding-top: 130px;
+  // padding-bottom: 183px;
 }
 
 .booking-contacts {
-  width: calc(100% / 2);
+  width: 100%;
+  @include desktop {
+    width: calc(100% / 2);
+  }
 }
 
 .booking-contacts-flex-container {
-  display: flex;
-  gap: 100px;
+  @include desktop {
+    display: flex;
+    gap: 100px;
+  }
 }

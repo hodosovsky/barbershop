@@ -1,15 +1,28 @@
 .gallery {
   &-pre-title {
     color: var(--second-title-color);
-    margin-bottom: 44px;
-  }
+    margin-bottom: 71px;
 
-  &-item {
-    width: calc((100% - 90px) / 4);
+    @include tablet {
+      margin-bottom: 44px;
+    }
   }
 
   &-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+  }
+
+  &-item {
+    width: 100%;
+
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
   }
 }

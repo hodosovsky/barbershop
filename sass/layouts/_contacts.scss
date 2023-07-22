@@ -1,4 +1,36 @@
 .contacts {
+  padding-top: 84px;
+
+  @include tablet {
+    padding-top: 100px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    padding-top: 0;
+  }
+
+  &-working-hours-wrap {
+    padding-top: 44px;
+
+    @include tablet {
+      padding-top: 89px;
+    }
+
+    @include desktop {
+      padding-top: 70px;
+    }
+  }
+
   &-title {
     color: var(--fisrt-title-color);
     font-family: Raleway;
@@ -51,7 +83,6 @@
       font-weight: 600;
       line-height: normal;
       text-transform: uppercase;
-      margin-top: 70px;
       margin-bottom: var(--typical-mb);
     }
   }
