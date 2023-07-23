@@ -113,6 +113,10 @@
   border: none;
   margin-left: auto;
   transition: var(--hover);
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .menu-open svg {
