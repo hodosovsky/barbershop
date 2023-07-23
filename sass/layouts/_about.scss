@@ -8,25 +8,34 @@
     display: none;
 
     @include tablet {
-      display: block;
-    }
-
-    @include desktop {
       display: flex;
+      flex-direction: column;
       gap: 30px;
     }
-  }
-
-  &-item + &-item {
-    margin-top: 30px;
 
     @include desktop {
-      margin-top: 0;
+      flex-direction: row;
     }
   }
 
+  //  &-item + &-item {
+  //   margin-top: 30px;
+
+  //   @include desktop {
+  //     margin-top: 0;
+  //   }
+  // }
+
   &-content {
-    max-width: 470px;
+    max-width: 418px;
+
+    @include tablet {
+      max-width: 330px;
+    }
+
+    @include desktop {
+      max-width: 470px;
+    }
   }
 
   &-pre-title {
@@ -37,6 +46,15 @@
   &-title {
     color: var(--second-title-color);
     margin-bottom: var(--typical-mb);
+    width: 306px;
+
+    @include tablet {
+      width: 330px;
+    }
+
+    @include desktop {
+      width: 470px;
+    }
   }
 
   &-after-title {
@@ -48,7 +66,7 @@
     color: #555;
     font-size: 14px;
     line-height: 1.86;
-    letter-spacing: 0.02;
+    letter-spacing: 0.28px;
     margin-bottom: 40px;
 
     @include tablet {
