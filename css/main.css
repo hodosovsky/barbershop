@@ -802,35 +802,35 @@ body {
 }
 
 .prices {
-  background-image: var(--prices-bg-gradient), url(../../img/prices/prices-bg-mob.jpg);
+  background-image: var(--prices-bg-gradient), url(../img/prices/prices-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .prices {
-    background-image: var(--prices-bg-gradient), url(../../img/prices/prices-bg-mob-2x.jpg);
+    background-image: var(--prices-bg-gradient), url(../img/prices/prices-bg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .prices {
-    background-image: var(--prices-bg-gradient), url(../../img/prices/prices-bg-tab.jpg);
+    background-image: var(--prices-bg-gradient), url(../img/prices/prices-bg-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: var(--prices-bg-gradient), url(../../img/prices/prices-bg-tab-2x.jpg);
+    background-image: var(--prices-bg-gradient), url(../img/prices/prices-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .prices {
     padding: 120px 0;
-    background-image: var(--prices-bg-gradient), url(../../img/prices/prices-bg.jpg);
+    background-image: var(--prices-bg-gradient), url(../img/prices/prices-bg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: var(--prices-bg-gradient), url(../../img/prices/prices-bg-2x.jpg);
+    background-image: var(--prices-bg-gradient), url(../img/prices/prices-bg-2x.jpg);
   }
 }
 .prices .prices-wrap {

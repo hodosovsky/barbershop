@@ -1,30 +1,30 @@
 .prices {
   background-image: var(--prices-bg-gradient),
-    url(../../img/prices/prices-bg-mob.jpg);
+    url(../img/prices/prices-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include retina {
     background-image: var(--prices-bg-gradient),
-      url(../../img/prices/prices-bg-mob-2x.jpg);
+      url(../img/prices/prices-bg-mob-2x.jpg);
   }
 
   @include tablet {
     background-image: var(--prices-bg-gradient),
-      url(../../img/prices/prices-bg-tab.jpg);
+      url(../img/prices/prices-bg-tab.jpg);
     @include retina {
       background-image: var(--prices-bg-gradient),
-        url(../../img/prices/prices-bg-tab-2x.jpg);
+        url(../img/prices/prices-bg-tab-2x.jpg);
     }
   }
 
   @include desktop {
     padding: 120px 0;
     background-image: var(--prices-bg-gradient),
-      url(../../img/prices/prices-bg.jpg);
+      url(../img/prices/prices-bg.jpg);
     @include retina {
       background-image: var(--prices-bg-gradient),
-        url(../../img/prices/prices-bg-2x.jpg);
+        url(../img/prices/prices-bg-2x.jpg);
     }
   }
 
